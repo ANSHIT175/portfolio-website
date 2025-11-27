@@ -1,4 +1,3 @@
 function scrollToContact() {
-    const contactSection = document.getElementById("contact");
-    contactSection.scrollIntoView({ behavior: "smooth" });
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
