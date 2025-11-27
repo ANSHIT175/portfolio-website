@@ -1,6 +1,7 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +15,12 @@ body {
     line-height: 1.6;
 }
 
+/* Header Background */
 header {
     background: #020617;
 }
 
+/* Navbar */
 .navbar {
     max-width: 1000px;
     margin: auto;
@@ -52,26 +55,19 @@ header {
     color: #22c55e;
 }
 
+/* Hero Section */
 .hero {
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 40px 20px 60px;
-}
-
-.hero-text h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
 .hero-text h1 span {
     color: #22c55e;
 }
 
-.hero-text p {
-    margin-bottom: 20px;
-}
-
-.hero-text button {
+.hero-text .btn-contact {
+    display: inline-block;
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
@@ -79,12 +75,15 @@ header {
     color: #020617;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
 }
 
-.hero-text button:hover {
+.hero-text .btn-contact:hover {
     opacity: 0.9;
 }
 
+/* Sections */
 .section {
     max-width: 1000px;
     margin: 20px auto;
@@ -98,6 +97,7 @@ header {
     color: #22c55e;
 }
 
+/* Skills */
 .skills-list {
     list-style: none;
     display: flex;
@@ -112,6 +112,7 @@ header {
     font-size: 14px;
 }
 
+/* Project Cards */
 .project-card {
     background: #111827;
     padding: 15px;
@@ -119,9 +120,15 @@ header {
     margin-top: 10px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 15px 0 25px;
     font-size: 12px;
     color: #9ca3af;
+}
+
+/* Fix scroll blocking */
+section {
+    scroll-margin-top: 100px;
 }
